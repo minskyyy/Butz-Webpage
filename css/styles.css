@@ -1465,16 +1465,17 @@ input[type=number] {
 }
 
 .carousel-caption{
-  top: 15rem;
   font-weight: bolder;
+  bottom: 12%;
 }
 .carousel-caption h5{
+  background: rgba(0,0,0,0.6);
+
+  border-radius: 0px;
   color: white;
-  padding: 0px;
-  margin: 0px;
   font-size: 25px;
 }
 .carousel-caption p{
-  color: white;
+  color: darkgrey;
   font-size: 15px;
 }
