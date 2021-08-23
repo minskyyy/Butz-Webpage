@@ -21,14 +21,18 @@ function scrollFunction() {
 
 // Navbar on mobile
 let elements = document.querySelectorAll(".nav-link:not(.dropdown-toggle)");
-
+//Toggle when any Head Item is pressed
 for (let i = 0; i < elements.length; i++) {
 	elements[i].addEventListener("click", () => {
 		document.querySelector(".offcanvas-collapse").classList.toggle("open");
 	});
 }
-
+//Toggle when Burger is pressed
 document.querySelector(".navbar-toggler").addEventListener("click", () => {
+  	document.querySelector(".offcanvas-collapse").classList.toggle("open");
+});
+//Toggle when Kontakt is pressed
+document.querySelector(".btn-solid-sm").addEventListener("click", () => {
   	document.querySelector(".offcanvas-collapse").classList.toggle("open");
 });
 
