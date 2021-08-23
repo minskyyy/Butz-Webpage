@@ -173,3 +173,10 @@ function mapContent(){
 		var popup = new tt.Popup({offset: popupOffsets}).setHTML(yourAddress);
 	    marker.setPopup(popup).togglePopup();
 }
+
+var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
+removeItemButton: true,
+maxItemCount:5,
+searchResultLimit:5,
+renderChoiceLimit:5
+});
