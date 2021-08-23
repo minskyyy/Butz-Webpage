@@ -1458,12 +1458,3 @@ input[type=number] {
   top:0.25rem;
   position: relative;
 }
-
-.teacher{
-  margin-left: 0rem;
-  margin-right: 0rem;
-  padding-left: 0rem;
-  padding-right: 0rem;
-  border-radius: 0rem;
-  --bs-gutter-x: 0rem;
-}
