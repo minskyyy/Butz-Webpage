@@ -378,7 +378,7 @@ a:hover {
 
 .offcanvas-collapse {
 	position: fixed;
-	top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
+	top: 4rem; /* Hähe des Sliders */
 	bottom: 0;
 	left: 100%;
 	width: 100%;
