@@ -1458,3 +1458,23 @@ input[type=number] {
   top:0.25rem;
   position: relative;
 }
+
+.carouselImage{
+  width: 100%;
+  height: auto;
+}
+
+.carousel-caption{
+  top: 15rem;
+  font-weight: bolder;
+}
+.carousel-caption h5{
+  color: white;
+  padding: 0px;
+  margin: 0px;
+  font-size: 25px;
+}
+.carousel-caption p{
+  color: white;
+  font-size: 15px;
+}
