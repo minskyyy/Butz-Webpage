@@ -928,6 +928,10 @@ a:hover {
 	margin-left: 0.5rem;
 }
 
+.mobileOnlyForm{
+  visibility: visible;
+}
+
 
 /******************/
 /*     Footer     */
@@ -1332,6 +1336,9 @@ a:hover {
 		margin-left: 1rem;
 	}
 	/* end of extra pages */
+  .mobileOnlyForm{
+    visibility: hidden;
+  }
 }
 /* end of min-width 992px */
 
@@ -1434,13 +1441,17 @@ a:hover {
 
 	/* Contact */
 	.form-1 .text-container {
-		margin-top: 1.5rem;
+		margin-top: 3rem;
 		margin-right: 2.75rem;
 	}
 
+
 	.form-1 form {
 		margin-left: 2.75rem;
+    margin-top: 1rem;
 	}
+
+
 	/* end of contact */
 
 
@@ -1505,8 +1516,12 @@ input[type=number] {
   text-decoration: none;
   bottom: 20px;
   margin-top: -10px;
-
 }
+
+.credentialsPerson:hover{
+  text-decoration: none;
+}
+
 
 .credentialsIcon{
   top:0.25rem;
