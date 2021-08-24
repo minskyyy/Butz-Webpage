@@ -34,10 +34,10 @@
 	<!-- SiteLogo  -->
     <link rel="icon" href="images/sitelogo.png">
 </head>
-<body class="homebody" data-bs-spy="scroll" data-bs-target="#navbarExample">
+<body data-bs-spy="scroll" data-bs-target="#navbarExample">
 
     <!-- Navigation -->
-    <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+    <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light homebody" aria-label="Main navigation">
         <div class="container">
 
             <!-- Image Logo -->
@@ -88,19 +88,23 @@
                 <div class="col-lg-6 col-xl-5">
                     <div class="text-container">
                         <h1 class="h1-large homeh1">Deine Fahrschule in Penzberg</h1>
-                        <p class="p-large homep">Wir bringen Euch schnell und sicher zum Ziel.</p>
+                        <!-- Start of P Animation -->
+                        <div class="homep">
+                        <p class="p-large">Wir bringen Euch schnell und sicher zum Ziel.</p>
                         <a class="btn-solid-lg homep" href="#contact" style="margin-bottom:1rem">Zum Anmeldeformular</a>
-                        <p class="p-small homep">Wir haben momentan einen sehr großen Andrang an neuen Fahrschülern, wir nehmen Neuanmeldungen an und es kann auch sofort mit der Theorie begonnen werden! <br> <b class=warning> Es kommt dann aber zu langen Wartezeiten bis zur ersten Fahrstunde!</b></p>
-                        <p class="p-small homep">
+                        <p class="p-small">Wir haben momentan einen sehr großen Andrang an neuen Fahrschülern, wir nehmen Neuanmeldungen an und es kann auch sofort mit der Theorie begonnen werden! <br> <b class=warning> Es kommt dann aber zu langen Wartezeiten bis zur ersten Fahrstunde!</b></p>
+                        <p class="p-small">
                         <span class="fas fa-viruses"></span>
                         <a href="#corona" target="_blank" class="covid"> Zu den aktuellen Corona-Maßnahmen </a>
                         </p>
+                      </div> <!-- End of P Animation -->
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6 col-xl-7">
 
                      <!--The div element for the map -->
-                  <div id='map' class='map'></div>
+                  <div id='map' class="map homep"></div>
+
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->

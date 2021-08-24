@@ -28,6 +28,11 @@ Colors:
 - Headings text - black #223150
 - Body text - dark gray #5e6576
 ******************************************/
+/*    Variables   *************************/
+:root{
+  --delaytimerH1: 0s;
+  --delaytimerP: 1s;
+}
 
 
 /**************************/
@@ -39,28 +44,42 @@ html {
 	height: 100%;
 }
 
-.homebody{
-    animation: fadeInAnimation ease .5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+.homebody, .header{
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .homeh1{
-  animation-delay: 1000000s;
-  animation: fadeInAnimation ease 1s;
+  opacity: 0;
+  animation: zoomAnimation ease 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  animation-delay: var(--delaytimerH1);
+  -webkit-animation-delay: var(--delaytimerH1);
+  -o-animation-delay: var(--delaytimerH1);
 }
 
 .homep{
-
+  opacity: 0;
   animation: fadeInAnimation ease 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 10s;
+  animation-delay: var(--delaytimerP);
+  -webkit-animation-delay: var(--delaytimerP);
+  -o-animation-delay: var(--delaytimerP);
 }
 
 @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@keyframes zoomAnimation {
     0% {
         opacity: 0;
         transform: scale(0.97);
@@ -1330,7 +1349,7 @@ a:hover {
 	/* Header */
 	.header {
 		overflow: hidden;
-		padding-top: 20.25rem;
+		padding-top: 15rem;
 		padding-bottom: 15rem;
 	}
 
