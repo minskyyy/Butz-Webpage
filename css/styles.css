@@ -31,7 +31,9 @@ Colors:
 /*    Variables   *************************/
 :root{
   --delaytimerH1: 0s;
-  --delaytimerP: 1s;
+  --delaytimerP: 0.7s;
+  --delaytimerM: 1.5s;
+  --backgroundColor: #fcfafb;
 }
 
 
@@ -42,6 +44,7 @@ body,
 html {
   width: 100%;
 	height: 100%;
+  background-color: var(--backgroundColor);
 }
 
 .homebody, .header{
@@ -68,6 +71,16 @@ html {
   animation-delay: var(--delaytimerP);
   -webkit-animation-delay: var(--delaytimerP);
   -o-animation-delay: var(--delaytimerP);
+}
+
+.homeM{
+  opacity: 0;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: var(--delaytimerM);
+  -webkit-animation-delay: var(--delaytimerM);
+  -o-animation-delay: var(--delaytimerM);
 }
 
 @keyframes fadeInAnimation {
@@ -629,6 +642,12 @@ a:hover {
 	color: #223150;
 }
 
+.cards-3 {
+  padding-top: 0rem;
+  padding-bottom: 2.25rem;
+  text-align: center;
+}
+
 
 /*********************/
 /*     Details 1     */
@@ -843,7 +862,7 @@ a:hover {
 .slider-1 {
 	padding-top: 2rem;
 	padding-bottom: 3.75rem;
-	background: linear-gradient(rgb(252, 250, 251), rgb(255, 255, 255));
+	background: var(--backgroundColor);
 	text-align: center;
 }
 
@@ -1528,6 +1547,12 @@ input[type=number] {
   position: relative;
 }
 
+.carousel{
+  width: 80%;
+  height: auto;
+  margin-bottom: 10rem;
+}
+
 .carouselImage{
   width: 100%;
   height: auto;
@@ -1535,7 +1560,7 @@ input[type=number] {
 
 .carousel-caption{
   font-weight: bolder;
-  bottom: 12%;
+  bottom: 1.5%;
 }
 .carousel-caption h5{
   background: rgba(0,0,0,0.6);
