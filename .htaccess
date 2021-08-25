@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule ^([a-z]+)\.html$ /index.html?$1 [R,L]

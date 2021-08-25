@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Fahrschule Butz Website">
+    <meta name="author" content="Fahrschule Butz">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>Login Page</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+
+
+	<!-- SiteLogo  -->
+    <link rel="icon" href="images/sitelogo.png">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+      <div class="container">
+
+          <!-- Image Logo -->
+          <a class="navbar-brand logo-image" href="index.html"><img src="images/Logo.svg" alt="alternative"></a>
+
+
+
+          <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html#services">Angebot</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html#fahrzeuge">Fahrzeuge</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle active" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Über uns</a>
+                      <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                          <li><a class="dropdown-item" href="article.html">Unsere Fahrlehrer</a></li>
+                          <li><div class="dropdown-divider"></div></li>
+                          <li><a class="dropdown-item" href="cars.html">Unsere Fahrzeuge</a></li>
+                          <li><div class="dropdown-divider"></div></li>
+                          <li><a class="dropdown-item" href="#">Unsere Fahrschule</a></li>
+                      </ul>
+                  </li>
+              </ul>
+              <span class="nav-item">
+                  <a class="btn-solid-sm" href="#contact">Kontakt</a>
+              </span>
+          </div> <!-- end of navbar-collapse -->
+      </div> <!-- end of container -->
+  </nav> <!-- end of navbar -->
+  <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header class="ex-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 ">
+                    <h1>Login</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+
+    <!-- Basic -->
+    <div id="services" class="cards-1 bg-gray">
+        <div class="container login">
+          <!-- Contact Form -->
+          <form class="passwordForm" action="authenticate.php" method="post">
+              <div class="form-group">
+                  <input type="text" class="form-control-input" placeholder="Benutzer" id="username" name="username" required>
+              </div>
+              <p>
+                    <input type="password" class="form-control-input inputPassword" placeholder="Passwort"  id="password" name="password" />
+                    <i class="bi bi-eye-slash" id="togglePassword"></i>
+              </p>
+
+              <div class="form-group">
+                  <button type="submit" class="form-control-submit-button">Anmelden</button>
+              </div>
+          </form>
+          <!-- end of contact form -->
+          </div> <!-- end of container -->
+      </div> <!-- end of cards-1 -->
+      <!-- end of services -->
+
+
+
+</div>
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+
+
+
+    <!-- Copyright -->
+    <div class="copyright bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <ul class="list-unstyled li-space-lg p-small">
+                        <li><a href="article.html">Details</a></li>
+                        <li><a href="terms.html">Geschäftsbedingungen</a></li>
+                        <li><a href="privacy.html">Datenschutz-Bestimmungen</a></li>
+                    </ul>
+                </div> <!-- end of col -->
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <p class="p-small statement">Copyright 2020 © <a href="https://www.instagram.com/justusschaefer/">Justus Schäfer</a></p>
+                </div> <!-- end of col -->
+
+
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
+
+
+    <!-- Back To Top Button -->
+    <button onclick="topFunction()" id="myBtn">
+        <img src="images/up-arrow.png" alt="alternative">
+    </button>
+    <!-- end of back to top button -->
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+
+    </map>
+
+
+</body>
+</html>

@@ -1115,6 +1115,20 @@ a:hover {
 	margin-bottom: 0.5rem;
 }
 
+/************************/
+/*     Login Page     */
+/************************/
+.passwordForm{
+  width: 20rem;
+  position: center;
+
+  padding-right: 1.5rem;
+  */ text-align: center;
+}
+form i {
+    margin-left: -30px;
+    cursor: pointer;
+}
 
 /*************************/
 /*     Media Queries     */
