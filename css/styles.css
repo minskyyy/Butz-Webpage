@@ -32,7 +32,7 @@ Colors:
 :root{
   --delaytimerH1: 0s;
   --delaytimerP: 0.7s;
-  --delaytimerM: 1.5s;
+  --delaytimerM: 0.8s;
   --backgroundColor: #fcfafb;
 }
 
@@ -73,7 +73,7 @@ html {
   -o-animation-delay: var(--delaytimerP);
 }
 
-.homeM{
+.googleMap{
   opacity: 0;
   animation: fadeInAnimation ease 1s;
   animation-iteration-count: 1;
@@ -167,6 +167,12 @@ h7 {
 	font-weight: 700;
 	font-size: 0.7rem;
 	line-height: 1rem;
+}
+
+.googleMap{
+   width: 100%;
+   height: 12rem;
+   border: 0;
 }
 
 .p-large {
@@ -1151,6 +1157,12 @@ a:hover {
 /* Min-width 992px */
 @media (min-width: 992px) {
 
+  .googleMap{
+     margin-top: 4.6rem;
+     width: 100%;
+     height: 25rem;
+     border: 0;
+  }
 	/* General Styles */
 	.h2-heading {
 		width: 35.25rem;
@@ -1370,7 +1382,12 @@ a:hover {
 		max-width: 1140px;
 	}
 	/* end of general styles */
-
+  .googleMap{
+     margin-top: 0rem;
+     width: 100%;
+     height: 30rem;
+     border: 0;
+  }
 	/* Header */
 	.header {
 		overflow: hidden;
