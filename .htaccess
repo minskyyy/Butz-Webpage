@@ -1,6 +1,5 @@
 RewriteEngine On
 RewriteBase /
-RewriteRule ^([a-z]+)\.html$ /index.html?$1 [R,L]
 RewriteRule article.html /fahrlehrer [R,L]
 RewriteRule index.html / [R,L]
 RewriteRule cars.html /fahrzeuge [R,L]
