@@ -19,17 +19,30 @@
  	<body class="loggedin">
         <?php
           $sql = "SELECT * FROM news;";
+          $i = 0;
+          $output = [
+            id,
+            date,
+            user,
+            topic,
+            input
+          ]
+
+
           $result = mysqli_query($con, $sql);
           $resultCheck = mysqli_num_rows($result);
           if ($resultCheck > 0 ){
             while($row = mysqli_fetch_assoc($result)){
-              echo $row['user'];
-              echo $row['date'];
-              echo $row['topic'];
-              echo $row['input'];
+                $output[$i] = $row['user'] + $row['date'] + $row['topic'] + $row['input'];
+                $i++;
             }
           }
+
+          for($j=0; $j = $i; $j++){
+            echo $output[$j] . "<br/>";
+          }
          ?>
+
 
  		<!-- Scripts -->
  		<script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
