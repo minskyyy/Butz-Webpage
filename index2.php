@@ -20,13 +20,7 @@
         <?php
           $sql = "SELECT * FROM news;";
           $i = 0;
-          $output = [
-            id,
-            date,
-            user,
-            topic,
-            input
-          ];
+          $output = array();
           $result = mysqli_query($con, $sql);
           $resultCheck = mysqli_num_rows($result);
           if ($resultCheck > 0 ){
