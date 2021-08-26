@@ -23,6 +23,9 @@
           $resultCheck = mysqli_num_rows($result);
           if ($resultCheck > 0 ){
             while($row = mysqli_fetch_assoc($result)){
+              echo $row['user'];
+              echo $row['date'];
+              echo $row['topic'];
               echo $row['input'];
             }
           }
