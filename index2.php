@@ -26,9 +26,7 @@
             user,
             topic,
             input
-          ]
-
-
+          ];
           $result = mysqli_query($con, $sql);
           $resultCheck = mysqli_num_rows($result);
           if ($resultCheck > 0 ){
