@@ -13,8 +13,14 @@ if (!isset($_SESSION['loggedin'])) {
 	<head>
 		<meta charset="utf-8">
 		<title>Home Page</title>
-		<link href="style.css" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+		<!-- Styles -->
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="css/fontawesome-all.min.css" rel="stylesheet">
+		<link href="css/swiper.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+
 	</head>
 	<body class="loggedin">
 		<nav class="navtop">
@@ -28,5 +34,11 @@ if (!isset($_SESSION['loggedin'])) {
 			<h2>Home Page</h2>
 			<p>Welcome back, <?=$_SESSION['name']?>!</p>
 		</div>
+
+		<!-- Scripts -->
+		<script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+		<script src="js/scripts.js"></script> <!-- Custom scripts -->
+
 	</body>
+
 </html>
