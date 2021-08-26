@@ -1,14 +1,8 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
-RewriteRule ^index\.html$ - [L]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
-</IfModule>
 
-RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.html$ - [L]
-RewriteRule ^article\.html$ - [L]
-RewriteRule ^cars\.html$ - [L]
+RewriteRule ^(.*)\.html$ /$1 [L,R=301]
