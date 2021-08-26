@@ -7,7 +7,6 @@
 RewriteEngine On
 RewriteBase /
 
-Redirect 301 / https://minskyy.net/
 RewriteRule ^([a-z]+).html /home [QSA,L]
 
 
