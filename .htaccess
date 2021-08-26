@@ -1,7 +1,5 @@
 RewriteEngine On
 RewriteBase /
-RewriteRule article.html /fahrlehrer [R,L]
-RewriteRule index.html / [R,L]
-RewriteRule cars.html /fahrzeuge [R,L]
-RewriteRule loginForm.html /AdminLogin [R,L]
-RewriteRule profile.html /profil [R,L]
+RewriteRule fahrlehrer /article.html [R,L]
+RewriteRule home /index.html [R,L]
+RewriteRule fahrzeuge /cars.html [R,L]
